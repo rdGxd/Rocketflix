@@ -6,17 +6,11 @@
 
 4 - Clique em Criar e escolha a opção Developer
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/acd70876-b5c9-433a-ac4c-30fda77c907e/Untitled.png)
-
 5 - Aceite os termos de uso da API
 
 6 - Preencha os dados necessários e clique em Enviar.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53fde663-8cda-4481-a0f0-d979c085fd25/Untitled.png)
-
 7 - Após clicar em enviar você terá acesso a sua API Key
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/533f3ea6-2537-49fb-ae5c-417d699d17d8/Untitled.png)
 
 8 - Após baixar o template terá um arquivo chamado `api.example`, cole a sua API KEY gerada no arquivo e renomeie o arquivo para `api.js`
 
