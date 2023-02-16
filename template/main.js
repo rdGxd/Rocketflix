@@ -8,24 +8,19 @@ function randomNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-function getMovie() {
-  axios
-    .get(url)
-    .then((response) => {
-      const data = response.data;
-      nomeFilme.textContent = data.title;
-      capaFilme.setAttribute("src", `${IMG_URL}${data.poster_path}`);
-      sinopseFilme.textContent = data.overview;
-      capaFilme.style.display = "flex";
-      detalhes.style.display = "flex";
-      console.log(data);
-    })
-    .catch(
-      (error) => console.error(error),
+async function getMovie() {
+  try {
+    const response = await axios.get(url);
+    const data = response.data;
+    nomeFilme.textContent = data.title;
+    capaFilme.setAttribute("src", `${IMG_URL}${data.poster_path}`);
+    sinopseFilme.textContent = data.overview;
+    (capaFilme.style.display = "flex"), detalhes.classList.remove("isHidden");
+  } catch (error) {
+    console.error(error),
       (nomeFilme.textContent =
         "Ops, hoje não é dia de assistir filme. Bora codar!"),
       capaFilme.setAttribute("src", "assets/Poster.svg"),
-      (capaFilme.style.display = "flex"),
-      (detalhes.style.display = "flex")
-    );
+      detalhes.classList.remove("isHidden");
+  }
 }

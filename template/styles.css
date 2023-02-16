@@ -15,18 +15,17 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   background: var(--background);
 }
 
 p {
   font-style: normal;
   font-weight: 400;
-  color: #fffcf9;
+  color: var(--subtitle);
 }
 
 /* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -57,6 +56,8 @@ header img {
 /* MAIN */
 
 main {
+  height: 111vh;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,34 +66,42 @@ main {
 
 /* SECTION */
 section {
-  display: none;
+  display: flex;
   flex-direction: column;
-  width: 628px;
-  height: 319px;
-  margin-top: 30px;
+  align-items: center;
 }
 
-section #capaFilme {
+article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 628px;
+  height: 320px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+article #capaFilme {
+  display: flex;
   position: absolute;
-  display: none;
   width: 171px;
   height: 243.77px;
 }
 
-section #nomeFilme {
+article #nomeFilme {
+  display: flex;
+  flex-wrap: nowrap;
   width: 231px;
   height: 25.71px;
   margin-left: 200px;
-  margin-bottom: 10px;
-
+  margin-bottom: 60px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #fffcf9;
+  color: var(--title);
 }
 
-section #sinopseFilme {
+article #sinopseFilme {
   display: flex;
   width: 423px;
   height: 274.24px;
@@ -103,17 +112,8 @@ section #sinopseFilme {
   margin-left: 200px;
 }
 
-/* FOOTER */
-
-footer {
-  text-align: center;
-  width: 381px;
-  height: 42px;
-  font-size: 14px;
-  line-height: 21px;
-}
-
 /* Button */
+
 button {
   display: flex;
   justify-content: center;
@@ -132,10 +132,24 @@ button {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
+
+  cursor: pointer;
 }
 
 button img {
   width: 35.56px;
   height: 25.29px;
   margin-right: 17px;
+}
+
+#texto {
+  text-align: center;
+  width: 381px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.isHidden {
+  display: none;
 }
