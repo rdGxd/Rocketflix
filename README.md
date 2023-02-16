@@ -12,7 +12,7 @@
 
 7 - Após clicar em enviar você terá acesso a sua API Key
 
-8 - Após baixar o template terá um arquivo chamado `api.example`, cole a sua API KEY gerada no arquivo e renomeie o arquivo para `api.js`
+8 - Após baixar o template terá um arquivo chamado `api.js`, cole a sua API KEY gerada no arquivo
 
 9 - Adicione a lógica do desafio no arquivo `main.js`
 
