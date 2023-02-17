@@ -82,7 +82,7 @@ article {
 }
 
 article #capaFilme {
-  display: flex;
+  display: none;
   position: absolute;
   width: 10.68rem;
   height: 15.23rem;
@@ -90,7 +90,6 @@ article #capaFilme {
 
 article #nomeFilme {
   display: flex;
-  flex-wrap: nowrap;
   width: 14.43rem;
   height: 1.60rem;
   margin-left: 12.5rem;
@@ -141,8 +140,4 @@ button img {
   width: 2.22rem;
   height: 1.58rem;
   margin-right: 1.06rem;
-}
-
-.isHidden {
-  display: none;
 }
