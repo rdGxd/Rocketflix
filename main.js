@@ -3,9 +3,7 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", getMovie);
 
-function randomNumber() {
-  return Math.floor(Math.random() * 780.498);
-}
+const randomNumber = () => Math.floor(Math.random() * 780.498);
 
 async function getMovie() {
   const url = `${BASE_URL}${randomNumber()}${API_KEY}${language}`;
@@ -17,7 +15,8 @@ async function getMovie() {
     sinopseFilme.textContent = data.overview;
     capaFilme.style.display = "flex";
     sinopseFilme.style.display = "flex";
-  } catch (error) {
+  } catch (e) {
+    console.error(e)
     nomeFilme.textContent =
       "Ainda não encontramos um filme clique novamente no botão";
     capaFilme.style.display = "flex";
